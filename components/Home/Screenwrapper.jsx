@@ -8,9 +8,9 @@ const Screenwrapper = () => {
     const { top } = useSafeAreaFrame()
     const paddingTop = top > 0 ? top : 0
   return (
-      <View style={{ flex: 1, paddingTop: paddingTop }}>
-          {children}
-    </View>
+    <View style={{ flex: 1, paddingTop: paddingTop }}>
+      <Text>Screen Wrapper</Text>
+     </View>
   )
 }
 
