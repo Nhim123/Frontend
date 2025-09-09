@@ -1,16 +1,14 @@
-import { Link, useRouter } from 'expo-router'
-import { Button, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import  Navigation  from '@/components/Home/Navigation'
 
-const index = () => {
-  const router = useRouter()
+export default function Index() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#2596be' }}>
-      <View>
-        <Text>Login</Text>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontWeight: 'bold', fontSize: 24, color: 'blue' }}>Welcome</Text>
       </View>
     </SafeAreaView>
+    
   )
 }
-
-export default index
